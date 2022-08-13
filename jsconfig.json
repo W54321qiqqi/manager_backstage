@@ -1,19 +1,25 @@
 {
+  // 设置编译选项
   "compilerOptions": {
+    // 指定使用的默认库"es3" "es5"....等等
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",
     "moduleResolution": "node",
+    // @根路径别名
     "paths": {
       "@/*": [
         "src/*"
       ]
     },
+     /*编译过程中需要引入的库文件的列表 */
     "lib": [
       "esnext",
       "dom",
       "dom.iterable",
       "scripthost"
     ]
-  }
+  },
+  // 提高IDE性能
+  "exclude": ["node_modules","dist","build"]
 }
