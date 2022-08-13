@@ -20,6 +20,7 @@ class HttpRequest
         }
         return config
     }
+    // 请求
     intercerptors(instance)
     {
        instance.interceptors.request.use(config => {
