@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content-outer {
+            background-color: pink;
+            height: 500px;
+            width: 500px;
+            overflow-y: scroll;
+        }
+
+        .content-inner {
+            background-color: blue;
+            height: 800px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-outer">
+        <div class="content-inner"></div>
+    </div>
+</body>
+<script>
+    let scrollHeight = document.querySelector(".content-outer").scrollHeight
+    let height = document.querySelector(".content-inner").scrollHeight
+    document.querySelector(".content-outer").scrollTop = scrollHeight
+</script>
+
+</html>
